@@ -1,0 +1,132 @@
+snippet struct
+    struct ${1:name} {
+        ${0:TARGET}
+    }
+
+snippet class
+    class ${1:name} {
+        ${0:TARGET}
+    }
+
+snippet enum
+    enum ${1:name} {
+        ${0:TARGET}
+    }
+
+snippet case
+    case ${1:pattern}${0}
+
+snippet protocol
+    protocol ${1:name} {
+        ${0:TARGET}
+    }
+
+snippet var
+    var ${1:name}: ${2:Int}${0}
+
+snippet let
+    let ${1:name}: ${2:Int}${0}
+
+snippet extension
+    extension ${1:Int} {
+        ${0:TARGET}
+    }
+
+snippet func
+    func ${1:name}(${2:#:arguments}) -> ${3:Int}${0}
+
+snippet void
+    func ${1:name}(${2:#:arguments})${0}
+
+snippet for
+    for var ${1:i = 0}; ${2:i < j}; ${3:i++} {
+        ${0:TARGET}
+    }
+
+snippet iter
+    for ${1:item} in ${2:collection} {
+        ${0:TARGET}
+    }
+
+snippet while
+    while ${1:false} {
+        ${0:TARGET}
+    }
+
+snippet repeat
+    repeat {
+        ${0:TARGET}
+    } while ${1:false}
+
+snippet if
+    if ${1:false} {
+        ${0:TARGET}
+    }${9}
+
+snippet elif
+    else if ${1:false} {
+        ${0:TARGET}
+    }${9}
+
+snippet else
+    else {
+        ${0:TARGET}
+    }${9}
+
+snippet optional
+    if ${1:let} ${2:name} = ${3:expression} else {
+        ${0:TARGET}
+    }${9}
+
+snippet guard
+    guard let ${1} = ${2} else {
+        ${0:TARGET}
+    }
+    ${9}
+
+snippet switch
+    switch ${1:expression} {
+        ${0:TARGET}
+    }
+
+snippet do
+    do {
+        ${0:TARGET}
+    }${9}
+
+snippet catch
+    catch${1:#:pattern} {
+        ${0:TARGET}
+    }${9}
+
+snippet defer
+    defer {
+        ${0:TARGET}
+    }
+
+snippet import
+    import ${1:module}
+    ${0}
+
+snippet subscript
+    subscript(${1:index: Int}) -> ${2:Int} {
+        ${0:TARGET}
+    }
+    ${9}
+
+snippet initializer
+    init${1:#:?}(${2:#:arguments}) {
+        ${0:TARGET}
+    }
+    ${9}
+
+snippet deinit
+    deinit {
+        ${0:TARGET}
+    }
+
+snippet closure
+    { ${1:#capture}(${2:#:arguments}) -> ${3:Void} in
+        ${0:TARGET}
+    }
+    ${9}
